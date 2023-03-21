@@ -1,0 +1,18 @@
+footer{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    position: sticky;
+    top:100%;
+    
+    .social_media{
+        gap: 1rem;
+        justify-content: right;
+        img{
+            height: 40px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.carusel-center{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    height: 650px;
+    width: 800px;    
+    
+    .carousel-caption{
+        width: fit-content;
+        
+             h5{
+            padding:5px 0px;
+            z-index: 100;
+            font-size: 24px;
+            color: $textoblanco;
+            background-color: $fondonegro;
+                }
+    }
+}
+

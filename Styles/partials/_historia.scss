@@ -1,0 +1,31 @@
+.contenedor{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+    img{
+        width: 90%;
+        padding: 1rem;
+
+        &:hover{
+            width: 100%;
+        }
+    }
+
+    p{
+        background-color: black;
+        color: white;
+        opacity: 50%;
+        font-size: 24px;
+        height: fit-content;
+
+        &:hover{
+            opacity: 100%;
+        }
+    }
+}
+
+
+

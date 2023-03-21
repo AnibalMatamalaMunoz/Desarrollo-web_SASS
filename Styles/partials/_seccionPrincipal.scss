@@ -1,0 +1,64 @@
+.centro{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+        a{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        width: 20%;
+        justify-content: stretch;
+        transition: .5s ease;
+        padding-bottom: 3rem;
+
+        &:hover{
+            width: 50%;
+            cursor: crosshair;
+            filter: contrast(130%);
+            box-shadow: 10px 10px 10px black;
+        }
+                img{
+                    width: 0px;
+                    flex-grow: 1;
+                    object-fit: cover;
+                    height: 60vh;
+                    border-radius: 10px;
+                    }
+                p{
+                    display: flex;
+                    font-size: 32px;
+                    align-items: center;
+                    position: absolute;
+                    font-family: 'Bebas Neue';
+                    color: brown;
+                    font-weight: bold;
+                    background-color: white;
+                    border-radius: 10px;
+                }
+        }
+}
+
+
+
+.videos{
+display: flex;
+justify-content: center;
+padding-bottom: 1rem;
+
+    iframe{
+    padding: 10px;
+    background-color: black;
+    border-radius: .3rem;
+    height: 60vh;
+
+        &:hover{
+            display: flex;
+            transition: 1.2s;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+                }
+        
+    }
+}

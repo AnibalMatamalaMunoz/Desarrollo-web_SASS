@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+body:before {
+  padding: 1rem;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  opacity: 0.2;
+  z-index: -10;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 15px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.navbar .navbar-logo-anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar-logo-anim .test {
+  font-size: 32px;
+  gap: 2rem;
+  line-height: 35px;
+  height: 35px;
+  font-family: "bebas neue";
+  overflow: hidden;
+}
+.navbar .navbar-logo-anim .test ul {
+  list-style: none;
+  padding-left: 10px;
+  animation: cambiar 1s infinite;
+}
+.navbar .navbar-logo-anim .logo {
+  width: 80px;
+}
+.navbar .list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.navbar .list a {
+  color: black;
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 32px;
+}
+.navbar .list a:hover {
+  background-color: black;
+  color: white;
+  opacity: 80%;
+  border-radius: 5px;
+}
+
+.centro {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.centro a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  width: 20%;
+  justify-content: stretch;
+  transition: 0.5s ease;
+  padding-bottom: 3rem;
+}
+.centro a:hover {
+  width: 50%;
+  cursor: crosshair;
+  filter: contrast(130%);
+  box-shadow: 10px 10px 10px black;
+}
+.centro a img {
+  width: 0px;
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60vh;
+  border-radius: 10px;
+}
+.centro a p {
+  display: flex;
+  font-size: 32px;
+  align-items: center;
+  position: absolute;
+  font-family: "Bebas Neue";
+  color: brown;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.videos {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.videos iframe {
+  padding: 10px;
+  background-color: black;
+  border-radius: 0.3rem;
+  height: 60vh;
+}
+.videos iframe:hover {
+  display: flex;
+  transition: 1.2s;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton {
+  display: flex;
+  width: 100%;
+  background: #24303c;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  background-color: #1f53c5;
+  display: flex;
+  justify-content: center;
+}
+
+.carusel-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  height: 650px;
+  width: 800px;
+}
+.carusel-center .carousel-caption {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.carusel-center .carousel-caption h5 {
+  padding: 5px 0px;
+  z-index: 100;
+  font-size: 24px;
+  color: white;
+  background-color: black;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  padding: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+.contenedor img {
+  width: 90%;
+  padding: 1rem;
+}
+.contenedor img:hover {
+  width: 100%;
+}
+.contenedor p {
+  background-color: black;
+  color: white;
+  opacity: 50%;
+  font-size: 24px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.contenedor p:hover {
+  opacity: 100%;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  position: sticky;
+  top: 100%;
+}
+footer .social_media {
+  gap: 1rem;
+  justify-content: right;
+}
+footer .social_media img {
+  height: 40px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.contenedor .img {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.contenedor p {
+  background-color: black;
+  opacity: 40%;
+  color: white;
+  font-size: 32px;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: justify;
+  width: 90%;
+  border-radius: 15px;
+  padding: 10px;
+}
+.contenedor p:hover {
+  opacity: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .centro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .centro a {
+    width: 80%;
+  }
+  .navbar a {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .logo {
+    width: 90px;
+  }
+  .test {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contenedor p {
+    font-size: 16px;
+  }
+  .contenedor iframe {
+    width: 450px;
+    height: 300px;
+  }
+  .carousel-center {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .list {
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+  }
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .list a:hover {
+    background-color: black;
+    color: white;
+    opacity: 70%;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  .centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .centro a {
+    width: 70%;
+  }
+  s .logo {
+    width: 50px;
+  }
+  .test {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .formulario h4, .formulario p {
+    font-size: 24px;
+  }
+  .boton {
+    padding: 16px;
+  }
+  .formulario a {
+    color: white;
+    text-decoration: none;
+  }
+  .formulario a:hover {
+    text-decoration: underline;
+  }
+  .formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contenedor p {
+    max-height: 200px;
+    overflow: hidden;
+    text-overflow: unset;
+  }
+  .contenedor p:hover {
+    max-height: none;
+  }
+  .contenedor iframe {
+    width: 250px;
+    height: 200px;
+  }
+}
+@keyframes cambiar {
+  0% {
+    margin-top: -32px;
+  }
+  12.5% {
+    margin-top: -24px;
+  }
+  25% {
+    margin-top: -16px;
+  }
+  47.5% {
+    margin-top: -8px;
+  }
+  50% {
+    margin-top: 0px;
+  }
+  72.5% {
+    margin-top: 8px;
+  }
+  75% {
+    margin-top: 16px;
+  }
+  87.5% {
+    margin-top: 24px;
+  }
+  100% {
+    margin-top: 32px;
+  }
+}/*# sourceMappingURL=main.css.map */
