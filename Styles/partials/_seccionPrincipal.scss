@@ -1,43 +1,54 @@
 .centro{
-    padding-top: 2rem;
-    padding-bottom: 5rem;
     display: flex;
+    gap: 1rem;
     justify-content: center;
-        a{
-        padding-left: 2rem;
-        padding-right: 2rem;
-        display: flex;
-        width: 20%;
-        justify-content: stretch;
-        transition: .5s ease;
-        padding-bottom: 3rem;
 
-        &:hover{
-            width: 50%;
-            cursor: crosshair;
-            filter: contrast(130%);
-            box-shadow: 10px 10px 10px black;
-        }
+            a{
+                display: flex;
+                flex-direction: column;
+                width: 20%;
+                justify-content: stretch;
+                transition: .5s ease;
+                padding-bottom: 1rem;
+                gap: 1rem;
+                text-decoration: none;
+
+                &:hover{
+                    width: 50%;
+                    cursor: crosshair;
+                    filter: contrast(130%);
+                    padding-bottom: 3rem;
+                }
+
                 img{
-                    width: 0px;
                     flex-grow: 1;
                     object-fit: cover;
                     height: 60vh;
-                    border-radius: 10px;
-                    }
+                    border-radius: 30px;
+                }    
+
                 p{
                     display: flex;
-                    font-size: 32px;
+                    background-color: black;
+                    opacity:70%;
+                    color: white;
+                    justify-content: center;
                     align-items: center;
-                    position: absolute;
-                    font-family: 'Bebas Neue';
-                    color: brown;
-                    font-weight: bold;
-                    background-color: white;
                     border-radius: 10px;
+                    padding: 0.3rem;
+                    font-size: 24px;
+
+                    &:hover{
+                        padding: 1rem;
+                        opacity: 100%;
+                    }
+
                 }
+                
+            }
         }
-}
+    
+
 
 
 

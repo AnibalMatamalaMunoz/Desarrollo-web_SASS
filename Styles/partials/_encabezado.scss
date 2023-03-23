@@ -1,49 +1,38 @@
-.navbar {
+.menu{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-    padding-block: 15px;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 15px;
-        .navbar-logo-anim{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .test{
-                font-size: 32px;
-                gap:2rem;
-                line-height: 35px;
-                height:35px;
-                font-family: 'bebas neue';
-                overflow: hidden;
-                    ul {
-                    list-style: none;
-                    padding-left: 10px;
-                    animation: cambiar 1s infinite;
-                        }
-                }
-            .logo {
-                width: 80px;
-                }
-            }
-            .list {
-                list-style: none;
-                display: flex;
-                gap: 25px;
-                a{
-                    color: black;
-                    text-decoration: none;
-                    font-family: 'Bebas Neue', cursive;
-                    font-size: 32px;
+    align-items: center;
+    padding: 1rem;
 
-                    &:hover{
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        img{
+            width: 75px;    
+        }
+
+        h1{
+            color:black;
+            font-size: 30px;
+
+                &:hover{
                         background-color: $fondonegro;
                         color:white;
-                        opacity: 80%;
+                        opacity: 100%;
                         border-radius: 5px;
                         }
-                    }
-                } 
         }
+    }
+
+    .navbar{
+        .navbar-collapse{
+        a{
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+}

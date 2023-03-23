@@ -13,7 +13,6 @@ body {
 }
 
 body:before {
-  padding: 1rem;
   content: "";
   width: 100%;
   height: 100%;
@@ -23,94 +22,78 @@ body:before {
   z-index: -10;
 }
 
-.navbar {
+.menu {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  padding-block: 15px;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 15px;
+  align-items: center;
+  padding: 1rem;
 }
-.navbar .navbar-logo-anim {
+.menu .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
-.navbar .navbar-logo-anim .test {
-  font-size: 32px;
-  gap: 2rem;
-  line-height: 35px;
-  height: 35px;
-  font-family: "bebas neue";
-  overflow: hidden;
+.menu .logo img {
+  width: 75px;
 }
-.navbar .navbar-logo-anim .test ul {
-  list-style: none;
-  padding-left: 10px;
-  animation: cambiar 1s infinite;
-}
-.navbar .navbar-logo-anim .logo {
-  width: 80px;
-}
-.navbar .list {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-.navbar .list a {
+.menu .logo h1 {
   color: black;
-  text-decoration: none;
-  font-family: "Bebas Neue", cursive;
-  font-size: 32px;
+  font-size: 30px;
 }
-.navbar .list a:hover {
+.menu .logo h1:hover {
   background-color: black;
   color: white;
-  opacity: 80%;
+  opacity: 100%;
   border-radius: 5px;
+}
+.menu .navbar .navbar-collapse a {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .centro {
-  padding-top: 2rem;
-  padding-bottom: 5rem;
   display: flex;
+  gap: 1rem;
   justify-content: center;
 }
 .centro a {
-  padding-left: 2rem;
-  padding-right: 2rem;
   display: flex;
+  flex-direction: column;
   width: 20%;
   justify-content: stretch;
   transition: 0.5s ease;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  text-decoration: none;
 }
 .centro a:hover {
   width: 50%;
   cursor: crosshair;
   filter: contrast(130%);
-  box-shadow: 10px 10px 10px black;
+  padding-bottom: 3rem;
 }
 .centro a img {
-  width: 0px;
   flex-grow: 1;
   -o-object-fit: cover;
      object-fit: cover;
   height: 60vh;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .centro a p {
   display: flex;
-  font-size: 32px;
+  background-color: black;
+  opacity: 70%;
+  color: white;
+  justify-content: center;
   align-items: center;
-  position: absolute;
-  font-family: "Bebas Neue";
-  color: brown;
-  font-weight: bold;
-  background-color: white;
   border-radius: 10px;
+  padding: 0.3rem;
+  font-size: 24px;
+}
+.centro a p:hover {
+  padding: 1rem;
+  opacity: 100%;
 }
 
 .videos {
@@ -148,24 +131,12 @@ body:before {
   justify-content: center;
 }
 
-.carusel-center {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  height: 650px;
-  width: 800px;
+.slide {
+  margin-top: 10px;
+  padding-bottom: 1rem;
 }
-.carusel-center .carousel-caption {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.carusel-center .carousel-caption h5 {
-  padding: 5px 0px;
-  z-index: 100;
-  font-size: 24px;
-  color: white;
-  background-color: black;
+.slide img {
+  height: 65vh;
 }
 
 .contenedor {
@@ -242,30 +213,19 @@ footer .social_media img {
   opacity: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 990px) {
   .centro {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .centro a {
-    width: 80%;
+    width: 100%;
   }
-  .navbar a {
-    font-size: 24px;
-    font-weight: bold;
+  .centro a img {
+    width: 100%;
   }
   .logo {
     width: 90px;
-  }
-  .test {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .formulario p {
-    height: 40px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 20px;
   }
   .contenedor p {
     font-size: 16px;
@@ -274,8 +234,11 @@ footer .social_media img {
     width: 450px;
     height: 300px;
   }
-  .carousel-center {
-    display: none;
+  .navbar-collapse a {
+    background-color: black;
+    opacity: 70%;
+    padding-inline: 1rem;
+    color: white;
   }
 }
 @media screen and (max-width: 600px) {
@@ -305,7 +268,7 @@ footer .social_media img {
   .centro a {
     width: 70%;
   }
-  s .logo {
+  .logo {
     width: 50px;
   }
   .test {
