@@ -15,10 +15,34 @@
     .logo {
         width: 90px;
     }
- 
+
+    .historia .contenedor{
+            grid-template-columns: 95%;
+            grid-template-rows: repeat(8,1fr);
+    }
+
+    .historia .contenedor .i2{
+        grid-area: 3;
+    }
+
+    .historia .contenedor .i4{
+        grid-area: 7;
+    }
+
+    .contenedor{
+        grid-template-columns: 95%;
+        grid-template-rows: repeat(6,1fr);
+    }
+
+    .contenedor .i1{
+        grid-area: 3;
+    }
+
     .contenedor p{
         font-size: 16px;
-    }  
+    }
+    
+    
 
     .contenedor iframe{
         width: 450px;

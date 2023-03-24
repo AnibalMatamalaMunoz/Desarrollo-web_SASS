@@ -192,6 +192,9 @@ footer .social_media img {
   justify-content: center;
   padding: 1rem;
 }
+.contenedor .mapa {
+  width: 40%;
+}
 .contenedor .img {
   width: 90%;
   padding: 1rem;
@@ -199,7 +202,7 @@ footer .social_media img {
 }
 .contenedor p {
   background-color: black;
-  opacity: 40%;
+  opacity: 30%;
   color: white;
   font-size: 32px;
   height: -moz-fit-content;
@@ -226,6 +229,23 @@ footer .social_media img {
   }
   .logo {
     width: 90px;
+  }
+  .historia .contenedor {
+    grid-template-columns: 95%;
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .historia .contenedor .i2 {
+    grid-area: 3;
+  }
+  .historia .contenedor .i4 {
+    grid-area: 7;
+  }
+  .contenedor {
+    grid-template-columns: 95%;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .contenedor .i1 {
+    grid-area: 3;
   }
   .contenedor p {
     font-size: 16px;
