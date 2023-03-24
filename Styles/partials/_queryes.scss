@@ -19,6 +19,11 @@
     .historia .contenedor{
             grid-template-columns: 95%;
             grid-template-rows: repeat(8,1fr);
+            
+    }
+
+    .historia .contenedor .i1{
+        grid-area: 1;
     }
 
     .historia .contenedor .i2{
@@ -28,6 +33,8 @@
     .historia .contenedor .i4{
         grid-area: 7;
     }
+
+    
 
     .contenedor{
         grid-template-columns: 95%;

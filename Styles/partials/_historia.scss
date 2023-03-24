@@ -2,12 +2,12 @@
     display:grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25% 25% 25%;
-    padding: 1rem;
+    padding: 0.5rem;
     align-items: center;
     justify-items: center;
     img{
         width: 90%;
-        padding: 1rem;
+        padding: .5rem;
 
         &:hover{
             width: 100%;
