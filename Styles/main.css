@@ -145,6 +145,18 @@ body:before {
 .slide img {
   height: 65vh;
 }
+.slide .pega {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  opacity: 70%;
+}
+.slide .pega p {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+}
 
 .contenedor {
   display: grid;
